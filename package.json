@@ -4,16 +4,27 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Vadim-Likhachev/ajs.git"
   },
-  "author": "",
+  "author": "Vadim Likhachev",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Vadim-Likhachev/ajs/issues"
   },
-  "homepage": "https://github.com/Vadim-Likhachev/ajs#readme"
+  "homepage": "https://github.com/Vadim-Likhachev/ajs#readme",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0"
+  }
 }
